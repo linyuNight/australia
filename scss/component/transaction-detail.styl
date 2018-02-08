@@ -1,0 +1,133 @@
+@import "../common/mixin"
+
+#app{
+  width:100%;
+  height:100%;
+}
+
+.bg{
+  position:fixed;
+  width:100%;
+  height:100%;
+  background:#f2f2f2;
+  z-index:-1;
+}
+
+.transaction-detail{
+  position:absolute;
+  z-index:200;
+  width:100%;
+  height:100%;
+  background:#f2f2f2;
+  text-align:center;
+  .transaction-detail-contain{
+    width:100%;
+    background:#fff;
+    padding-top:38px;
+    padding-bottom:33px;
+    font-size:0;
+    .transaction-detail-pic{
+      width:38px;
+      height:38px;
+    }
+    .transaction-detail-text{
+      font-size:18px;
+      color:#000;
+      height:40px;
+      line-height:40px;
+      margin-bottom:35px;
+    }
+    .btn-contain{
+      margin:0 auto;
+      width:215px;
+      height:30px;
+      line-height:30px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      .btn-left{
+        font-size:13px;
+        color:$red;
+        width:100px;
+        height:30px;
+        text-align:center;
+        line-height:30px;
+        border:1px solid $red;
+        border-radius:2px;
+      }
+      .btn-right{
+        font-size:13px;
+        color:$red;
+        width:100px;
+        height:30px;
+        text-align:center;
+        line-height:30px;
+        border:1px solid $red;
+        border-radius:2px;
+      }
+    }
+  }
+}
+
+.erweima-popup-contain{
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  z-index:200;
+  background:rgba(0,0,0,.7);
+  .erweima-popup-box{
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+    width:280px;
+    height:326px;
+    background:#fff;
+    border-radius:4px;
+    .erweima-popup-content{
+      position:relative;
+      width:100%;
+      height:302px;
+      text-align:center;
+      padding-top:26px;
+      .close-btn{
+        extend-click()
+        position:absolute;
+        right:15px;
+        top:15px;
+        width:11px;
+        height:11px;
+        bg('../../image/make-money/close.png');
+      }
+      .erweima-popup-content-top{
+        font-size:16px;
+        color:#000;
+        height:54px;
+        line-height:54px;
+        font-weight:bold;
+      }
+      .erweima-popup-content-erweima{
+        width:173px;
+        height:173px;
+        margin-bottom:8px;
+      }
+      .erweima-popup-content-bottom{
+        font-size:14px;
+        color:#000;
+        height:26px;
+        line-height:26px;
+      }
+      .erweima-popup-content-note{
+        font-size:12px;
+        color:#666666;
+        height:25px;
+        line-height:25px;
+      }
+    }
+  }
+}

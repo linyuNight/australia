@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>澳洲线下商城</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/Swiper/3.4.2/css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/common/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/component/extension-detail.css">
+    <script type="text/javascript" src="https://cdn.bootcss.com/jquery/2.2.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.bootcss.com/Swiper/3.4.2/js/swiper.min.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <div class="classification">
+        <div class="bg"></div>
+        <div class="classification-item-bg">
+          <div class="classification-item">
+            <div class="goods-list">
+              <div class="goods-item">
+                <div class="goods-pic-contain">
+                  <div class="goods-pic"></div>
+                </div>
+                <div class="goods-text-contain">
+                  <div class="goods-text-contain-top">
+                    <div class="goods-text-contain-top-top">
+                      <span class="font-weight">【健脑益智】</span><span>2件装Herbs of Gold和丽康高含量银杏叶片6000毫</span>
+                    </div>
+                    <div class="goods-text-contain-top-bottom">超级热卖组合套装</div>
+                  </div>
+                  <div class="goods-text-contain-bottom">
+                    <div class="goods-text-contain-bottom-left">被推广896次</div>
+                    <div class="goods-text-contain-bottom-right">生成推广图片</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="goods-list-title-contain clear">
+          <div class="goods-list-title-left"></div>
+          <div class="goods-list-title-center">相关商品</div>
+          <div class="goods-list-title-right"></div>
+        </div>
+        <div class="goods-list-contain clear">
+          <div class="goods-item">
+            <div class="goods-item-pic"></div>
+            <div class="goods-item-text-contain">
+              <p class="goods-item-text1">Swisse 高浓度蔓越莓 维持泌尿健康  30粒/瓶Swisse 高浓度蔓越莓 维持泌尿健康  30粒/瓶Swisse 高浓度蔓越莓 维持泌尿健康  30粒/瓶</p>
+              <table class="goods-item-text2">
+                <tr>
+                  <td class="goods-item-text-new">￥781.2</td>
+                  <td class="goods-item-text-text">买手价</td>
+                </tr>
+                <tr>
+                  <td style="height:3px;"></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td class="goods-item-text-old">￥781.2</td>
+                  <td class="goods-item-text-text">市场参考价</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="goods-item">
+            <div class="goods-item-pic"></div>
+            <div class="goods-item-text-contain">
+              <p class="goods-item-text1">Swisse 高浓度蔓越莓 维持泌尿健康  30粒/瓶Swisse 高浓度蔓越莓 维持泌尿健康  30粒/瓶Swisse 高浓度蔓越莓 维持泌尿健康  30粒/瓶</p>
+              <table class="goods-item-text2">
+                <tr>
+                  <td class="goods-item-text-new">￥781.2</td>
+                  <td class="goods-item-text-text">买手价</td>
+                </tr>
+                <tr>
+                  <td style="height:3px;"></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td class="goods-item-text-old">￥781.2</td>
+                  <td class="goods-item-text-text">市场参考价</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="goods-item">
+            <div class="goods-item-pic"></div>
+            <div class="goods-item-text-contain">
+              <p class="goods-item-text1">Swisse 高浓度蔓越莓 维持泌尿健康  30粒/瓶Swisse 高浓度蔓越莓 维持泌尿健康  30粒/瓶Swisse 高浓度蔓越莓 维持泌尿健康  30粒/瓶</p>
+              <table class="goods-item-text2">
+                <tr>
+                  <td class="goods-item-text-new">￥781.2</td>
+                  <td class="goods-item-text-text">买手价</td>
+                </tr>
+                <tr>
+                  <td style="height:3px;"></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td class="goods-item-text-old">￥781.2</td>
+                  <td class="goods-item-text-text">市场参考价</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+    <!-- built files will be auto injected -->
+    <script typt="text/javascript">
+      $(function(){
+        $('.describe-close-btn').on('click',function(){
+          $('.describe-box').fadeOut();
+        })
+
+        $('.return-btn').on('click',function(){
+          $('.describe-box').fadeOut();
+        })
+
+        $('.confirm-btn').on('click',function(){
+          alert('提交成功')
+          $('.describe-box').fadeOut();
+        })
+
+        $('.share-top-tab-item-text-font').on('click',function(){
+          $('.share-top-tab-item-text-select').toggle();
+        })
+
+        $('.share-top-tab-item-text-select-item').on('click',function(){
+          index = $(this).index()
+          changeSelect(index)
+        })
+
+        function changeSelect(index){
+          $('.share-top-tab-item-text-select-item').removeClass('share-top-tab-item-text-select-item-active');
+          $('.share-top-tab-item-text-select-item').eq(index).addClass('share-top-tab-item-text-select-item-active')
+          $('.share-top-tab-item-text-select').hide()
+        }
+
+        $('.goods-search-input').on('focus',function(){
+          $('.goods-search-bg').show();
+          $(this).addClass('goods-search-input-focus');
+          $('.myorder-btn').hide();
+          $('.search-btn').show();
+          $('.return-pic').show();
+          $('.goods-search-bg').show();
+          $('.goods-list').hide();
+          $('.share-top-tab-item-text').hide();
+          $('.goods-search-content').css('width','calc(100% - 30px)');
+        })
+
+        $('.return-pic').on('click',function(){
+          $('.goods-search-bg').hide();
+          $('.goods-search-input').removeClass('goods-search-input-focus');
+          $('.myorder-btn').show();
+          $('.search-btn').hide();
+          $('.return-pic').hide();
+          $('.goods-search-bg').hide();
+          $('.goods-list').show();
+          $('.share-top-tab-item-text').show();
+          $('.goods-search-content').css('width','calc(100% - 100px)');
+        })
+
+        // for(let i=0;i<$('.goods-list-box').length;i++){
+        //   $('.goods-list-box').eq(i).css('width',$('.goods-list-box').eq(i).children().length*96)
+        // }
+
+        $('.classification-item').eq(0).show()
+        $('.goods-item-content').on('click',function(){
+          $('.goods-item-content').removeClass('goods-item-content-active')
+          $(this).addClass('goods-item-content-active')
+          $('.classification-item').hide()
+          $('.classification-item').eq($(this).parent().index()).show()
+        })
+
+        // $('.goods-search-input').on('input',function(){
+        //   if($(this).val()){
+        //     $('.clear-btn').show()
+        //   }else{
+        //     $('.clear-btn').hide()
+        //   }
+        // })
+
+        $('.clear-btn').on('click',function(){
+          $('.goods-search-input').val('')
+          $('.clear-btn').hide()
+        })
+      })
+    </script>
+  </body>
+</html>

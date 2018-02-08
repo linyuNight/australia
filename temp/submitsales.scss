@@ -1,0 +1,127 @@
+$yellow:#fdd953;
+$red:#e84e40;
+
+.goods-show-contain-box{
+	color:#333;
+	width:100%;
+	height:100%;
+	padding:0 20px;
+	background-color: #fff;
+	overflow:scroll;
+	-webkit-overflow-scrolling : touch;
+	.goods-show-title{
+		position:fixed;
+		z-index: 1000;
+		top:0;
+		left:0;
+		width:100%;
+		height:35px;
+		background:$yellow;
+		.title-pic{
+			margin:0 auto;
+		}
+	}
+	.bigcontain{
+		padding-top: 35px;
+		.contain-title{
+			font-size: 32px;
+			width:100%;
+			text-align: center;
+			font-weight: bold;
+			height:80px;
+			line-height: 80px;
+		}
+		.input-contain{
+			width:100%;
+			height:54px;
+			.input-left{
+				float:left;
+				font-size: 18px;
+				font-weight: bold;
+				height:32px;
+				line-height: 32px;
+				width:42%;
+			}
+			.input-small-left{
+				width:35%;
+			}
+			.input-content{
+				float:right;
+				width:55%;
+				height:32px;
+				border:1px solid #333;
+				padding-left: 20px;
+				font-size: 16px;
+			}
+			.input-content-radio{
+				float:right;
+				height:32px;
+				.input-radio{
+					line-height: 32px;
+					vertical-align: middle;
+				}
+				.input-radio-span{
+					height:32px;
+					line-height: 32px;
+					font-size: 18px;
+					font-weight: bold;
+					vertical-align: middle;
+					margin-right: 20px;
+				}
+			}
+			.div-content{
+				float:right;
+				width:55%;
+				height:32px;
+				font-size:18px;
+			}
+			.input-bigcontain{
+				float:right;
+				width:65%;
+				height:32px;
+				font-size:18px;
+				.input-small-content{
+					float:left;
+					width:14%;
+					height:32px;
+					line-height:32px;
+					border:1px solid #333;
+					text-align:center;
+					margin:0 4px;
+				}
+				.input-bigcontain-text{
+					float:left;
+					height:32px;
+					line-height:32px;
+				}
+			}
+		}
+		.submit-btn{
+			margin:20px auto 40px;
+			width:140px;
+			height:40px;
+			line-height: 40px;
+			font-size: 18px;
+			text-align: center;
+			background-color: #fdd953;
+			border-radius: 4px;
+		}
+		.edit-btn{
+			margin:20px auto 40px;
+			width:140px;
+			height:40px;
+			line-height: 40px;
+			font-size: 18px;
+			text-align: center;
+			background-color: #fdd953;
+			border-radius: 4px;
+		}
+		.text{
+			margin:20px 0;
+		}
+		.phone{
+			font-size: 16px;
+			font-weight: bold;
+		}
+	}
+}

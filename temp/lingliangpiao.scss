@@ -1,0 +1,99 @@
+$yellow:#fdd953;
+$red:#e84e40;
+
+.goods-show-contain{
+	position: relative;
+	width:100%;
+	height:100%;
+	padding-top:35px;
+	padding-bottom:49px;
+	background-color: #fff;
+	.goods-show-title{
+		position:fixed;
+		z-index: 1000;
+		top:0;
+		left:0;
+		width:100%;
+		height:35px;
+		background:$yellow;
+		.title-pic{
+			margin:0 auto;
+		}
+	}
+	.bigcontain{
+		position:absolute;
+		top:35px;
+		left:20px;
+		right:20px;
+		bottom:0;
+		overflow:scroll;
+		-webkit-overflow-scrolling : touch;
+		.text-title{
+			font-size: 20px;
+			height:48px;
+			line-height: 48px;
+			margin-top: 30px;
+		}
+		.text-small-title{
+			font-size: 16px;
+			margin-bottom: 60px;
+		}
+		.youhui-contain{
+			margin:0 auto 60px;
+			width:314px;
+			height:130px;
+			border:2px solid #222222;
+			border-radius: 8px;
+			.youhui-contain-top{
+				position: relative;
+				width:100%;
+				height:93px;
+				background-color: #fcd953;
+				border-radius: 6px 6px 0 0;
+				.youhui-cat-icon{
+					position: absolute;
+					right:44px;
+					bottom:0;
+					width:70px;
+					height:70px;
+					background:url('../../image/successcat@2x.png') center no-repeat;
+					background-size: cover;
+					opacity:.2;
+				}
+				.youhui-text-contain{
+					position: absolute;
+					height:93px;
+					line-height: 93px;
+					margin-left: 32px;
+					.small-font{
+						color:#222222;
+						font-size: 24px;
+					}
+					.money-font{
+						color:#222222;
+						font-size: 50px;
+					}
+					.right-font{
+						color:#222222;
+						font-size: 15px;
+					}
+				}
+			}
+			.youhui-contain-botttom{
+				border-top:1px dashed #222222;
+				width:100%;
+				height:37px;
+				.youhui-time{
+					margin-left: 32px;
+					height:37px;
+					line-height:37px;
+					font-size: 13px;
+					color:#444444;
+				}
+			}
+		}
+		.text-time{
+			font-size: 16px;
+		}
+	}
+}

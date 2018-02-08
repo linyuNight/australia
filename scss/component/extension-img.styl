@@ -1,0 +1,128 @@
+@import "../common/mixin"
+
+#app{
+  width:100%;
+  height:100%;
+}
+
+.bg{
+  position:fixed;
+  width:100%;
+  height:100%;
+  background:#f2f2f2;
+  z-index:-1;
+}
+
+.extension{
+  width:100%;
+  height:100%;
+  overflow-y:scroll;
+  -webkit-overflow-scrolling : touch; 
+  .extension-img{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:94px;
+    padding:15px;
+    background:#fff;
+    z-index:100;
+    .extension-img-top{
+      width:100%;
+      margin-bottom:15px;
+      flex-between();
+      .extension-img-top-l{
+        font-size:16px;
+        color:$red;
+      }
+      .extension-img-top-r{
+        font-size:13px;
+        color:#039be5;
+      }
+    }
+    .extension-img-bottom{
+      width:100%;
+      font-size:13px;
+      color:#000;
+      line-height:18px;
+    }
+  }
+  .extension-space{
+    position:fixed;
+    left:0;
+    top:94px;
+    width:100%;
+    font-size:12px;
+    color:#999999;
+    height:35px;
+    line-height:35px;
+    text-align:center;
+    background:#f2f2f2;
+    z-index:100;
+  }
+  .extension-center{
+    bordertop-1px($grey);
+    width:100%;
+    height:100px;
+    padding:0 15px;
+    background:#fff;
+    flex-between();
+    .extension-pic{
+      width:68px;
+      height:68px;
+      bg('../../image/extension-img/portrait.png');
+      border-radius:50%;
+    }
+    .extension-text-contain{
+      width:calc(100% - 80px);
+      height:45px;
+      display:flex;
+      flex-direction:column;
+      justify-content:space-between;
+      .extension-text-top{
+        font-size:16px;
+        color:#000;
+      }
+      .extension-text-bottom{
+        font-size:13px;
+        color:#000;
+      }
+    }
+  }
+  .extension-tab{
+    position:fixed;
+    left:0;
+    top:129px;
+    width:100%;
+    padding:0 20px;
+    display:flex;
+    background:#fff;
+    z-index:100;
+    .extension-tab-item{
+      flex:1;
+      text-align:center;
+      .extension-tab-item-content{
+        display:inline-block;
+        height:50px;
+        line-height:50px;
+        color:#666;
+      }
+      .active{
+        border-bottom:2px solid $red;
+        color:$red;
+      }
+    }
+  }
+  .extension-section-list{
+    padding-top:179px;
+    width:100%;
+    .extension-section{
+      display:none;
+      width:100%;
+      background:#fff;
+      .extension-section-pic{
+        width:100%;
+      }
+    }
+  }
+}

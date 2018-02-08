@@ -1,0 +1,389 @@
+@import "../common/mixin"
+
+#app{
+  width:100%;
+  height:100%;
+}
+
+.bg{
+  position:fixed;
+  width:100%;
+  height:100%;
+  background:#f2f2f2;
+  z-index:-1;
+}
+
+.goods-item{
+  width:100%;
+  height:80px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:#fafafa;
+  padding:0 15px;
+  margin-bottom:3px;
+  &:last-child{
+    margin-bottom:0;
+  }
+  .goods-item-pic{
+    width:60px;
+    height:60px;
+    background-image:url(../../image/order/img40.png);
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+  }
+  .goods-item-right{
+    width:calc(100% - 70px);
+    height:76px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    .goods-item-text{
+      font-size:13px;
+      color:$font;
+      line-height: 18px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      -webkit-box-orient: vertical;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+    }
+    .goods-item-bottom{
+      position:relative;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      .goods-item-bottom-notice{
+        position:absolute;
+        left:0;
+        top:-22px;
+        height:20px;
+        line-height:20px;
+        border:1px solid #ff6600;
+        font-size:12px;
+        color:#ff6600;
+        padding:0 8px;
+        border-radius:2px;
+      }
+      .goods-item-price{
+        font-size:14px;
+        color:$red;
+      }
+      .goods-item-num{
+        font-size:12px;
+        color:#333333;
+        vertical-align:middle;
+        .goods-item-num-pic{
+          width:6px;
+          height:6px;
+          vertical-align:middle;
+          margin-right:2px;
+        }
+      }
+    }
+  }
+}
+
+.btn-bar{
+  padding:7px 15px;
+  .submit-btn{
+    float:right;
+    width:70px;
+    height:27px;
+    text-align:center;
+    line-height:27px;
+    border:1px solid $red;
+    border-radius:2px;
+    font-size:14px;
+    color:$red;
+    margin-left:10px;
+  }
+  .cancel-btn{
+    float:right;
+    width:70px;
+    height:27px;
+    text-align:center;
+    line-height:27px;
+    border:1px solid #999;
+    border-radius:2px;
+    font-size:14px;
+    color:#666666;
+    margin-left:10px;
+  }
+  .see-btn{
+    float:right;
+    width:70px;
+    height:27px;
+    text-align:center;
+    line-height:27px;
+    border:1px solid $red;
+    border-radius:2px;
+    font-size:14px;
+    color:$red;
+    margin-left:10px;
+  }
+}
+
+.order-detail{
+  position:absolute; 
+  z-index:200;
+  width:100%;
+  height:100%;
+  background:#f2f2f2;
+  .goods-detail-header{
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height:40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#fff;
+    padding:0 15px;
+    z-index:210;
+    .goods-detail-header-left{
+      width:130px;
+      height:40px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      .goods-detail-header-left-pic{
+        width:20px;
+        height:18px;
+        background-image:url(../../image/goods-detail/shop.png);
+        background-position:center;
+        background-size:100%;
+        background-repeat:no-repeat;
+      }
+      .goods-detail-header-left-text{
+        font-size:14px;
+        color:#000;
+        font-weight:bold;
+      }
+    }
+    .goods-detail-header-right{
+      height:40px;
+      line-height:40px;
+      text-align:right;
+      .goods-detail-header-right-text{
+        display:inline-block;
+        font-size:14px;
+        color:#000;
+      }
+      .goods-detail-header-right-pic{
+        display:inline-block;
+        width:5px;
+        height:9px;
+        background-image:url(../../image/goods-detail/img37.png);
+        background-position:center;
+        background-size:100%;
+        background-repeat:no-repeat;
+      }
+    }
+  }
+  .order-detail-state-contain{
+    background:#fff;
+    margin-top:48px;
+    margin-bottom:8px;
+    padding:11px 15px;
+    .order-detail-state{
+      height:20px;
+      line-height:20px;
+      font-size:13px;
+      .order-detail-state-left{
+        color:#000;
+      }
+      .order-detail-state-right{
+        color:$red;
+      }
+    }
+    .order-detail-time{
+      height:19px;
+      line-height:19px;
+      font-size:12px;
+      color:#999999;
+    }
+    .order-detail-overseas{
+      height:19px;
+      line-height:19px;
+      font-size:12px;
+      color:#999999;
+    }
+  }
+  .order-top{
+    width:100%;
+    padding:6px 15px;
+    background:#fff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:8px;
+    .order-top-center{
+      width:100%;
+      .order-top-center-top{
+        width:calc(100% - 5px);
+        padding-left:35px;
+        height:40px;
+        line-height:40px;
+        font-size:16px;
+        color:#000;
+        .order-user-name{
+          float:left;
+          margin-right:23px;
+        }
+        .order-user-phone{
+          float:left;
+        }
+      }
+      .order-top-address-box{
+        width:calc(100% - 5px);
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        margin-bottom:10px;
+        .order-top-center-bottom{
+          padding-left:35px;
+          background-image:url(../../image/purchase/address.png);
+          background-position:left center;
+          background-size:18px 21px;
+          background-repeat:no-repeat;
+          margin-right:17px;
+          line-height:18px;
+          font-size:14px;
+          color:#000;
+          min-height:21px;
+        }
+      }
+    }
+    .order-top-right{
+      width:5px;
+      height:9px;
+    }
+  }
+  .goods-imformation{
+    background:#fff;
+    .goods-imformation-top{
+      height:40px;
+      line-height:40px;
+      padding:0 15px;
+      font-size:13px;
+      color:#000;
+    }
+  }
+  .order-price-box{
+    borderbottom-1px($grey)
+    padding:11px 15px;
+    background:#fff;
+    .order-price-contain{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      line-height:30px;
+      font-size:12px;
+      .order-price-left{
+        height:30px;
+        color:#666666
+      }
+      .order-price{
+        height:30px;
+        color:#000
+      }
+    }
+    .order-freight-contain{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      line-height:19px;
+      font-size:12px;
+      .order-freight-left{
+        height:19px;
+        color:#666666
+      }
+      .order-freight{
+        height:19px;
+        color:#000
+      }
+    }
+  }
+  .order-totalprice-contain{
+    text-align:right;
+    padding:0 15px;
+    height:40px;
+    line-height:40px;
+    background:#fff;
+    margin-bottom:8px;
+    .order-totalprice-contain-left{
+      font-size:13px;
+      color:#000;
+    }
+    .order-totalprice-contain-right{
+      font-size:16px;
+      color:$red;
+    }
+  }
+  .pay-order-box{
+    padding:10px 15px;
+    background:#fff;
+    line-height:20px;
+    margin-bottom:8px;
+    .order-num-contain{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      height:20px;
+      .order-num-contain-left{
+        font-size:12px;
+        color:#666666;
+      }
+      .order-num-contain-copy{
+        extend-click()
+        font-size:13px;
+        color:$red;
+      }
+    }
+    .pay-order-num{
+      height:20px;
+      font-size:12px;
+      color:#666666;
+    }
+    .pay-order-time{
+      height:20px;
+      font-size:12px;
+      color:#666666;
+    }
+  }
+  .pay-order-refund-box{
+    padding:15px;
+    line-height:18px;
+    background:#fff;
+    .pay-order-refund-title{
+      font-size:14px;
+    }
+    .pay-order-refund-contain{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      .pay-order-refund-time{
+        font-size:12px;
+      }
+      .pay-order-refund-money{
+        font-size:12px;
+      }
+    }
+  }
+  .goods-imformation-btn-bar{
+    position:fixed;
+    left:0;
+    bottom:0;
+    z-index:210;
+    width:100%;
+    height:40px;
+    background:#fff;
+  }
+  .footer-space{
+    widht:100%;
+    height:48px;
+  }
+}

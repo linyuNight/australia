@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>推广图片预览</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/Swiper/3.4.2/css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/common/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/component/extension-img.css">
+    <script type="text/javascript" src="https://cdn.bootcss.com/jquery/2.2.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.bootcss.com/Swiper/3.4.2/js/swiper.min.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <div class="extension">
+        <div class="extension-img">
+          <div class="extension-img-top">
+            <div class="extension-img-top-l">朋友圈参考文案</div>
+            <div class="extension-img-top-r" data-clipboard-text="3453454354">点击复制文案</div>
+          </div>
+          <div class="extension-img-bottom">是一种独特的完整蔓越莓果实粉剂，蔓越莓具有抗粘附特性，有助于减少细菌附着至尿道，支持泌尿道健康。</div>
+        </div>
+        <div class="extension-space">长按下图保存至手机，就可去发朋友圈咯</div>
+        <!-- <div class="extension-center">
+          <div class="extension-pic"></div>
+          <div class="extension-text-contain">
+            <div class="extension-text-top">小野猪澳洲代购</div>
+            <div class="extension-text-bottom">澳洲当地代买，有需要的找我哦！</div>
+          </div>
+        </div> -->
+        <div class="extension-tab">
+          <div class="extension-tab-item">
+            <div class="extension-tab-item-content active">图一</div>
+          </div>
+          <div class="extension-tab-item">
+            <div class="extension-tab-item-content">图二</div>
+          </div>
+          <div class="extension-tab-item">
+            <div class="extension-tab-item-content">图三</div>
+          </div>
+          <div class="extension-tab-item">
+            <div class="extension-tab-item-content">图四</div>
+          </div>
+          <div class="extension-tab-item">
+            <div class="extension-tab-item-content">图五</div>
+          </div>
+          <div class="extension-tab-item">
+            <div class="extension-tab-item-content">图六</div>
+          </div>
+        </div>
+        <div class="extension-section-list">
+          <div class="extension-section">
+            <div class="extension-center">
+              <div class="extension-pic"></div>
+              <div class="extension-text-contain">
+                <div class="extension-text-top">1小野猪澳洲代购</div>
+                <div class="extension-text-bottom">澳洲当地代买，有需要的找我哦！</div>
+              </div>
+            </div>
+            1
+            <img class="extension-section-pic" src="../image/extension-img/details.png">
+          </div>
+          <div class="extension-section">
+            <div class="extension-center">
+              <div class="extension-pic"></div>
+              <div class="extension-text-contain">
+                <div class="extension-text-top">2小野猪澳洲代购</div>
+                <div class="extension-text-bottom">澳洲当地代买，有需要的找我哦！</div>
+              </div>
+            </div>
+            2
+            <img class="extension-section-pic" src="../image/extension-img/details.png">
+          </div>
+          <div class="extension-section">
+            <div class="extension-center">
+              <div class="extension-pic"></div>
+              <div class="extension-text-contain">
+                <div class="extension-text-top">3小野猪澳洲代购</div>
+                <div class="extension-text-bottom">澳洲当地代买，有需要的找我哦！</div>
+              </div>
+            </div>
+            3
+            <img class="extension-section-pic" src="../image/extension-img/details.png">
+          </div>
+          <div class="extension-section">
+            <div class="extension-center">
+              <div class="extension-pic"></div>
+              <div class="extension-text-contain">
+                <div class="extension-text-top">4小野猪澳洲代购</div>
+                <div class="extension-text-bottom">澳洲当地代买，有需要的找我哦！</div>
+              </div>
+            </div>
+            4
+            <img class="extension-section-pic" src="../image/extension-img/details.png">
+          </div>
+          <div class="extension-section">
+            <div class="extension-center">
+              <div class="extension-pic"></div>
+              <div class="extension-text-contain">
+                <div class="extension-text-top">5小野猪澳洲代购</div>
+                <div class="extension-text-bottom">澳洲当地代买，有需要的找我哦！</div>
+              </div>
+            </div>
+            5
+            <img class="extension-section-pic" src="../image/extension-img/details.png">
+          </div>
+          <div class="extension-section">
+            <div class="extension-center">
+              <div class="extension-pic"></div>
+              <div class="extension-text-contain">
+                <div class="extension-text-top">6小野猪澳洲代购</div>
+                <div class="extension-text-bottom">澳洲当地代买，有需要的找我哦！</div>
+              </div>
+            </div>
+            6
+            <img class="extension-section-pic" src="../image/extension-img/details.png">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- built files will be auto injected -->
+    <script src="https://cdn.bootcss.com/clipboard.js/1.7.1/clipboard.min.js"></script>
+    <script typt="text/javascript">
+      $(function(){
+        if($('.extension-section').length <= 1){
+          $('.extension-section-list').css('paddingTop','129px')
+        }
+        $('.extension-section').eq(0).show();
+        $('.extension-tab-item').on('click',function(){
+          $('.extension-tab-item-content').removeClass('active');
+          $(this).find('.extension-tab-item-content').addClass('active');
+          $('.extension-section').hide();
+          $('.extension-section').eq($(this).index()).show();
+          $('.extension').animate({scrollTop: '0px'},0);
+        })
+
+        $('.extension-img-top-r').attr('data-clipboard-text',$('.extension-img-bottom').html())
+        $('.extension-img-top-r').on('click',function(){
+          var clipboard = new Clipboard('.extension-img-top-r');
+          alert('复制成功')
+        })
+      })
+    </script>
+  </body>
+</html>

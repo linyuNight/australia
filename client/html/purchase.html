@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>澳洲线下商城</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/Swiper/3.4.2/css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/common/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/component/purchase.css">
+    <script type="text/javascript" src="https://cdn.bootcss.com/jquery/2.2.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.bootcss.com/Swiper/3.4.2/js/swiper.min.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <div class="purchase">
+        <div class="bg">
+          <div class="empty-bg-bottom"></div>
+        </div>
+        <header class="goods-detail-header">
+          <div class="goods-detail-header-left">
+            <div class="goods-detail-header-left-pic"></div>
+            <div class="goods-detail-header-left-text">海带宝澳洲代购</div>
+          </div>
+          <!-- <div class="goods-detail-header-right">
+            <div class="goods-detail-header-right-text">编辑</div>
+          </div> -->
+        </header>
+        <!-- <div class="goods-list">
+          <div class="goods-item">
+            <input class="goods-item-input" type="checkbox" name="goods" />
+            <div class="goods-item-pic"></div>
+            <div class="goods-item-right">
+              <div class="goods-item-text">澳洲DHC橄榄护唇膏天然植物无色滋润淡化唇纹防干裂 1.5g 2支</div>
+              <div class="goods-item-bottom">
+                <div class="goods-item-price">￥38.00</div>
+                <div class="goods-item-num-contain">
+                  <div class="goods-item-num-minus" @click="minus"></div>
+                  <input class="goods-item-num-input" pattern="[0-9]*" v-model="number" @change="checkNum" @click.13="checkNum">
+                  <div class="goods-item-num-plus" @click="plus"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="goods-item">
+            <input class="goods-item-input" type="checkbox" name="goods" />
+            <div class="goods-item-pic"></div>
+            <div class="goods-item-right">
+              <div class="goods-item-text">澳洲DHC橄榄护唇膏天然植物无色滋润淡化唇纹防干裂 1.5g 2支</div>
+              <div class="goods-item-bottom">
+                <div class="goods-item-price">￥38.00</div>
+                <div class="goods-item-num-contain">
+                  <div class="goods-item-num-minus" @click="minus"></div>
+                  <input class="goods-item-num-input" pattern="[0-9]*" v-model="number" @change="checkNum" @click.13="checkNum">
+                  <div class="goods-item-num-plus" @click="plus"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="goods-item">
+            <input class="goods-item-input" type="checkbox" name="goods" />
+            <div class="goods-item-pic"></div>
+            <div class="goods-item-right">
+              <div class="goods-item-text">澳洲DHC橄榄护唇膏天然植物无色滋润淡化唇纹防干裂 1.5g 2支</div>
+              <div class="goods-item-bottom">
+                <div class="goods-item-price">￥38.00</div>
+                <div class="goods-item-num-contain">
+                  <div class="goods-item-num-minus" @click="minus"></div>
+                  <input class="goods-item-num-input" pattern="[0-9]*" v-model="number" @change="checkNum" @click.13="checkNum">
+                  <div class="goods-item-num-plus" @click="plus"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="goods-item">
+            <input class="goods-item-input" type="checkbox" name="goods" />
+            <div class="goods-item-pic"></div>
+            <div class="goods-item-right">
+              <div class="goods-item-text">澳洲DHC橄榄护唇膏天然植物无色滋润淡化唇纹防干裂 1.5g 2支</div>
+              <div class="goods-item-bottom">
+                <div class="goods-item-price">￥38.00</div>
+                <div class="goods-item-num-contain">
+                  <div class="goods-item-num-minus" @click="minus"></div>
+                  <input class="goods-item-num-input" pattern="[0-9]*" v-model="number" @change="checkNum" @click.13="checkNum">
+                  <div class="goods-item-num-plus" @click="plus"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="goods-item">
+            <input class="goods-item-input" type="checkbox" name="goods" />
+            <div class="goods-item-pic"></div>
+            <div class="goods-item-right">
+              <div class="goods-item-text">澳洲DHC橄榄护唇膏天然植物无色滋润淡化唇纹防干裂 1.5g 2支</div>
+              <div class="goods-item-bottom">
+                <div class="goods-item-price">￥38.00</div>
+                <div class="goods-item-num-contain">
+                  <div class="goods-item-num-minus" @click="minus"></div>
+                  <input class="goods-item-num-input" pattern="[0-9]*" v-model="number" @change="checkNum" @click.13="checkNum">
+                  <div class="goods-item-num-plus" @click="plus"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="goods-item">
+            <input class="goods-item-input" type="checkbox" name="goods" />
+            <div class="goods-item-pic"></div>
+            <div class="goods-item-right">
+              <div class="goods-item-text">澳洲DHC橄榄护唇膏天然植物无色滋润淡化唇纹防干裂 1.5g 2支</div>
+              <div class="goods-item-bottom">
+                <div class="goods-item-price">￥38.00</div>
+                <div class="goods-item-num-contain">
+                  <div class="goods-item-num-minus" @click="minus"></div>
+                  <input class="goods-item-num-input" pattern="[0-9]*" v-model="number" @change="checkNum" @click.13="checkNum">
+                  <div class="goods-item-num-plus" @click="plus"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="goods-item">
+            <input class="goods-item-input" type="checkbox" name="goods" />
+            <div class="goods-item-pic"></div>
+            <div class="goods-item-right">
+              <div class="goods-item-text">澳洲DHC橄榄护唇膏天然植物无色滋润淡化唇纹防干裂 1.5g 2支</div>
+              <div class="goods-item-bottom">
+                <div class="goods-item-price">￥38.00</div>
+                <div class="goods-item-num-contain">
+                  <div class="goods-item-num-minus" @click="minus"></div>
+                  <input class="goods-item-num-input" pattern="[0-9]*" v-model="number" @change="checkNum" @click.13="checkNum">
+                  <div class="goods-item-num-plus" @click="plus"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+        </div>
+        <footer class="purchase-footer">
+          <div class="footer-left">
+            <input class="total-select" type="checkbox" name="goods" />
+            <div class="total-text">全选</div>
+          </div>
+          <div class="footer-right">
+            <div class="footer-right-left">
+              <div class="footer-right-left-top">
+                <div class="total-price-text">合计：</div>
+                <div class="total-price">￥58.00</div>
+              </div>
+              <div class="footer-right-left-bottom">未含运费</div>
+            </div>
+            <div class="submit-btn">去支付</div>
+          </div>
+        </footer> -->
+        <div class="empty-page">
+          <div class="empty-round"></div>
+          <div class="empty-content">
+            <div class="empty-icon"></div>
+            <div class="text-contain">        
+              <p class="empty-text1">购物车还是空的，快去选购吧~</p>
+            </div>
+            <div class="link-btn">去逛逛</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- built files will be auto injected -->
+    <script typt="text/javascript">
+      $(function(){
+        $('.total-select').on("click",function(){
+          $('.goods-item-input').prop("checked",$(this)[0].checked)
+        })
+        $('.goods-item-input').on("click",function(){
+          $('.total-select').prop("checked",$('.goods-item-input').length==$('.goods-item-input:checked').length?true:false)
+        })
+      })
+    </script>
+  </body>
+</html>

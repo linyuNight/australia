@@ -1,0 +1,86 @@
+#app {
+  width: 100%;
+  height: 100%;
+}
+.bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #f2f2f2;
+  z-index: -1;
+}
+.evaluate-goods-item {
+  margin: 0 auto 8px;
+  width: 100%;
+  background: #fff;
+  padding: 0 15px;
+}
+.evaluate-goods-item:last-child {
+  margin: 0 auto 0;
+}
+.evaluate-goods-item .evaluate-content {
+  width: 100%;
+  padding: 15px 0;
+}
+.evaluate-goods-item .evaluate-content .evaluate-center-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.evaluate-goods-item .evaluate-content .evaluate-center-top .evaluate-center-name {
+  font-size: 12px;
+  color: #666;
+}
+.evaluate-goods-item .evaluate-content .evaluate-center-top .evaluate-center-time {
+  font-size: 12px;
+  color: #666;
+}
+.evaluate-goods-item .evaluate-content .evaluate-center-text {
+  line-height: 18px;
+  font-size: 13px;
+  color: #000;
+}
+.evaluate-goods-item .evaluate-content .evaluate-center-pic-list {
+  padding: 6px 0;
+}
+.evaluate-goods-item .evaluate-content .evaluate-center-pic-list .evaluate-center-pic-item {
+  float: left;
+  width: 80px;
+  height: 80px;
+  background-image: url("../../image/goods-detail/img36.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 8px;
+}
+.evaluate-goods-detail {
+  position: absolute;
+  z-index: 300;
+  width: 100%;
+  background: #f2f2f2;
+}
+.evaluate-goods-detail .evaluate-goods-detail-header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  z-index: 100;
+  background: #fff;
+  padding: 0 15px;
+}
+.evaluate-goods-detail .evaluate-goods-detail-header .evaluate-goods-detail-header-left {
+  font-size: 13px;
+  color: #666;
+}
+.evaluate-goods-detail .evaluate-goods-detail-header .evaluate-goods-detail-header-right {
+  font-size: 13px;
+  color: #e51c23;
+}
+.evaluate-goods-detail .evaluate-goods-list {
+  margin-top: 48px;
+}

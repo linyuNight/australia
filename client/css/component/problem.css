@@ -1,0 +1,49 @@
+#app {
+  width: 100%;
+  height: 100%;
+}
+.bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #f2f2f2;
+  z-index: -1;
+}
+.problem {
+  position: absolute;
+  width: 100%;
+  z-index: 200;
+  background: #f2f2f2;
+}
+.problem .question-list {
+  width: 100%;
+  padding: 10px 15px 6px;
+}
+.problem .question-list .question-item {
+  width: 100%;
+}
+.problem .question-list .question-item .question-item-top {
+  width: 100%;
+  padding: 7px 0;
+  line-height: 18px;
+}
+.problem .question-list .question-item .question-item-top .question-item-top-left {
+  font-size: 16px;
+  color: #000;
+  font-weight: bold;
+}
+.problem .question-list .question-item .question-item-top .question-item-top-right {
+  font-size: 14px;
+  color: #000;
+  font-weight: bold;
+}
+.problem .question-list .question-item .question-item-bottom {
+  width: 100%;
+  background: #fff;
+  padding: 15px;
+  font-size: 13px;
+  color: #333;
+  margin-bottom: 10px;
+  line-height: 20px;
+  border-radius: 3px;
+}

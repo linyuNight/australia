@@ -1,0 +1,192 @@
+@import "../common/mixin"
+
+#app{
+  width:100%;
+  height:100%;
+}
+
+.bg{
+  position:fixed;
+  width:100%;
+  height:100%;
+  background:#f2f2f2;
+  z-index:-1;
+}
+
+.my-share{
+  position:absolute; 
+  width:100%;
+  height:100%;
+  z-index:200;
+  background:#f2f2f2;
+  .my-share-top{
+    width:100%;
+    height:45px;
+    padding:0 15px;
+    background:#fff;
+    flex-between();
+    .my-share-top-text{
+      font-size:14px;
+      color:#000;
+      margin-right:10px;
+    }
+    .my-share-top-money{
+      font-size:16px;
+      color:$red;
+      margin-right:4px;
+    }
+    .my-share-top-moneytext{
+      font-size:14px;
+      color:$red;
+    }
+  }
+  .my-share-top-note{
+    width:100%;
+    height:29px;
+    line-height:29px;
+    text-align:right;
+    font-size:12px;
+    color:#999999;
+    padding:0 15px;
+    margin-bottom:10px;
+    span{
+      transform:scale(.8);
+    }
+  }
+  .my-share-list{
+    width:100%;
+    
+    .my-share-item{
+      width:100%;
+      height:105px;
+      padding-left:15px;
+      background:#fff;
+      &:last-child{
+        .my-share-item-content{         
+          &:after{
+            border-top:none;
+          }
+        }
+      }
+      .my-share-item-content{
+        borderbottom-1px($grey);
+        width:100%;
+        padding:15px 15px 15px 0;
+        flex-between();
+        .my-share-item-left{
+          width:75px;
+          height:75px;
+          bg('../../image/share/img40.png');
+        }
+        .my-share-item-right{
+          width:calc(100% - 90px);
+          height:75px;
+          flex-column();
+          .my-share-item-right-top{
+            width: 100%;
+            font-size: 13px;
+            color: #000;
+            line-height: 18px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            -webkit-box-orient: vertical;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+          }
+          .my-share-item-right-bottom{
+            width:100%;
+            flex-between();
+            .my-share-item-right-bottom-left{
+              .my-share-item-right-bottom-left-text{
+                font-size:12px;
+                color:#999999;
+                margin-right:5px;
+              }
+              .my-share-item-right-bottom-left-num{
+                font-size:13px;
+                color:#000;
+              }
+            }
+            .my-share-item-right-bottom-right{
+              .my-share-item-right-bottom-right-text{
+                font-size:12px;
+                color:#999999;
+                margin-right:5px;
+              }
+              .my-share-item-right-bottom-right-money{
+                font-size:13px;
+                color:$red;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .empty-page{
+    position:relative;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    .empty-round{
+      position:absolute;
+      left:50%;
+      top:173px;
+      width:880px;
+      height:880px;
+      margin-left:-440px;
+      border-radius:50%;
+      background:#fff;
+      z-index:0;
+    }
+    .empty-content{
+      position:absolute;
+      width:100%;
+      height:100%;
+      z-index:1;
+      .empty-icon{
+        margin:91px auto 29px;
+        width:110px;
+        height:143px;
+        bg('../../image/empty/share_empty.png');
+      }
+      .text-contain{
+        width:100%;
+        height:82px;
+        .empty-text1{
+          text-align:center;
+          font-size:14px;
+          color:#666666;
+          height:26px;
+          line-height:26px;
+        }
+        .empty-text2{
+          text-align:center;
+          font-size:12px;
+          color:#000;
+          height:23px;
+          line-height:23px;
+        }
+      }
+      .link-btn{
+        margin:0 auto;
+        width:84px;
+        height:35px;
+        line-height:35px;
+        border-radius:3px;
+        border:1px solid $red;
+        text-align:center;
+        font-size:16px;
+        color:$red;
+      }
+    }
+  }
+  .empty-bg-bottom{
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:100%;
+    height:30%;
+    background:#fff;
+  }
+}

@@ -1,0 +1,260 @@
+#app {
+  width: 100%;
+  height: 100%;
+}
+.bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #f2f2f2;
+  z-index: -1;
+}
+.server-introduction {
+  position: absolute;
+  z-index: 200;
+  width: 100%;
+  background: #f2f2f2;
+}
+.server-introduction .banner {
+  width: 100%;
+  height: 85px;
+  margin-bottom: 8px;
+  background-image: url("../../image/server-introduction/title.png");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-szie: cover;
+}
+.server-introduction .server-introduction-item {
+  width: 100%;
+  padding: 20px 15px;
+  background: #fff;
+  margin-bottom: 8px;
+}
+.server-introduction .server-introduction-item:last-child {
+  margin-bottom: 0;
+}
+.server-introduction .server-introduction-item .server-introduction-content-title {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.server-introduction .server-introduction-item .server-introduction-content-title .title-l {
+  float: left;
+  width: 3px;
+  height: 16px;
+  border-radius: 2px;
+  background: #e9574a;
+  margin-right: 8px;
+}
+.server-introduction .server-introduction-item .server-introduction-content-title .title-text {
+  float: left;
+  font-size: 16px;
+  color: #000;
+  font-weight: bold;
+}
+.server-introduction .server-introduction-item .title2 {
+  margin-bottom: 20px;
+}
+.server-introduction .server-introduction-item .text-p {
+  width: 100%;
+  font-size: 13px;
+  color: #333;
+  line-height: 20px;
+  margin-bottom: 16px;
+}
+.server-introduction .server-introduction-item .text-pic {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.server-introduction .server-introduction-item .text-pic .text-pic1 {
+  width: 94px;
+  height: 30px;
+  background-image: url("../../image/server-introduction/advantage01.png");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.server-introduction .server-introduction-item .text-pic .text-pic2 {
+  width: 94px;
+  height: 30px;
+  background-image: url("../../image/server-introduction/advantage02.png");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.server-introduction .server-introduction-item .text-pic .text-pic3 {
+  width: 94px;
+  height: 30px;
+  background-image: url("../../image/server-introduction/advantage03.png");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.server-introduction .server-introduction-item .pic-text-list {
+  width: 100%;
+}
+.server-introduction .server-introduction-item .pic-text-list .pic-text-item {
+  width: 100%;
+  height: 65px;
+  margin-bottom: 30px;
+}
+.server-introduction .server-introduction-item .pic-text-list .pic-text-item:last-child {
+  margin-bottom: 0;
+}
+.server-introduction .server-introduction-item .pic-text-list .pic-text-item .pic-text-item-l {
+  float: left;
+  width: 65px;
+  height: 65px;
+}
+.server-introduction .server-introduction-item .pic-text-list .pic-text-item .bg1 {
+  background-image: url("../../image/server-introduction/icon01.png");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.server-introduction .server-introduction-item .pic-text-list .pic-text-item .bg2 {
+  background-image: url("../../image/server-introduction/icon02.png");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.server-introduction .server-introduction-item .pic-text-list .pic-text-item .bg3 {
+  background-image: url("../../image/server-introduction/icon03.png");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.server-introduction .server-introduction-item .pic-text-list .pic-text-item .pic-text-item-r {
+  float: right;
+  width: calc(100% - 75px);
+  padding-top: 8px;
+}
+.server-introduction .server-introduction-item .pic-text-list .pic-text-item .pic-text-item-r .pic-text-item-r-top {
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.server-introduction .server-introduction-item .pic-text-list .pic-text-item .pic-text-item-r .pic-text-item-r-bottom {
+  font-size: 13px;
+}
+.server-introduction .server-introduction-item .step {
+  width: 100%;
+  margin-bottom: 15px;
+}
+.server-introduction .server-introduction-item .step .step-pic {
+  float: left;
+  width: 62px;
+  height: 24px;
+}
+.server-introduction .server-introduction-item .step .step-pic1 {
+  background-image: url("../../image/server-introduction/step1.png");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.server-introduction .server-introduction-item .step .step-pic2 {
+  background-image: url("../../image/server-introduction/step2.png");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.server-introduction .server-introduction-item .step .step-pic3 {
+  background-image: url("../../image/server-introduction/step3.png");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.server-introduction .server-introduction-item .step .step-pic4 {
+  background-image: url("../../image/server-introduction/step4.png");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.server-introduction .server-introduction-item .step .step-text {
+  float: right;
+  width: calc(100% - 72px);
+  line-height: 24px;
+  font-size: 13px;
+}
+.server-introduction .server-introduction-item .step .step-text2 {
+  float: right;
+  width: calc(100% - 72px);
+  line-height: 18px;
+  font-size: 12px;
+  color: #999;
+}
+.server-introduction .server-introduction-item .bottom-notice {
+  width: 100%;
+  padding: 14px;
+  border: 1px dotted #ff7366;
+  line-height: 18px;
+  font-size: 13px;
+  border-radius: 2px;
+}
+.server-introduction .server-introduction-item .introduction-swiper {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 30px;
+}
+.server-introduction .server-introduction-item .introduction-swiper .bg1 {
+  background-image: url("../../image/server-introduction/采购门店.png");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-szie: cover;
+}
+.server-introduction .server-introduction-item .introduction-swiper .bg2 {
+  background-image: url("../../image/server-introduction/采购中.png");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-szie: cover;
+}
+.server-introduction .server-introduction-item .introduction-swiper .bg3 {
+  background-image: url("../../image/server-introduction/打包中.png");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-szie: cover;
+}
+.server-introduction .server-introduction-item .introduction-swiper .bg4 {
+  background-image: url("../../image/server-introduction/海带宝仓库.png");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-szie: cover;
+}
+.server-introduction .server-introduction-item .introduction-swiper .swiper-pagination-bullet {
+  background: #fff;
+  opacity: 1;
+}
+.server-introduction .server-introduction-item .introduction-swiper .swiper-pagination-bullet-active {
+  background: #e9574a;
+}
+.server-introduction .server-introduction-item .introduction-bottom-img {
+  margin: 0 auto;
+  width: 140px;
+  height: 20px;
+  background-image: url("../../image/server-introduction/logo.png");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+.server-introduction .server-introduction-item .introduction-bottom-text {
+  width: 100%;
+  font-size: 13px;
+  line-height: 18px;
+  margin-bottom: 18px;
+}
+.server-introduction .server-introduction-item .extension-btn {
+  margin: 0 auto;
+  width: 180px;
+  height: 36px;
+  background-image: url("../../image/server-introduction/button.png");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}

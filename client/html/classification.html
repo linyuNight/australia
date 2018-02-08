@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>日本线下商城</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/Swiper/3.4.2/css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/common/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/component/classification.css">
+    <script type="text/javascript" src="https://cdn.bootcss.com/jquery/2.2.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.bootcss.com/Swiper/3.4.2/js/swiper.min.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <div class="classification">
+        <div class="bg"></div>
+        <div class="goods-search-bg""></div>
+        <div class="goods-search">
+          <div class="goods-search-content-box">
+            <div class="goods-search-content">
+              <div class="goods-search-input-contain">
+                <div class="return-pic"></div>
+                <input class="goods-search-input" type="text" placeholder="请输入商品或品牌名称" />
+                <div class="clear-btn"></div>
+                <div class="search-btn">搜索</div>
+              </div>
+            </div>
+          </div>
+          <transition name="fade">
+            <div class="goods-list clear" v-show="!isSearch">
+              <div class="goods-list-contain">
+                <div class="goods-list-box clear">
+                  <div class="goods-item">
+                    <div class="goods-item-content goods-item-content-active">保健专区</div>
+                  </div>
+                  <div class="goods-item">
+                    <div class="goods-item-content">家具用品</div>
+                  </div>
+                  <div class="goods-item">
+                    <div class="goods-item-content">美容美妆</div>
+                  </div>
+                  <div class="goods-item">
+                    <div class="goods-item-content">母婴专区</div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </transition>
+        </div>
+        <!-- <div v-for="item in items" class="classification-item">
+          <div class="goods-list clear">
+            <router-link v-for="type in item" tag="div" class="goods-item" to="/classificationDetail">
+              <div class="goods-pic goods-pic1" :style="{backgroundImage:'url('+type.url+')'}"></div>
+              <div class="goods-text">口红</div>
+            </div>
+            
+          </div>
+        </div> -->
+        <div class="classification-item-bg">
+          <div class="classification-item">
+            <div class="goods-list clear">
+              <div class="goods-item">
+                <div class="goods-pic goods-pic1"></div>
+                <div class="goods-text">保肝护肝</div>
+              </div>
+              <div class="goods-item">
+                <div class="goods-pic goods-pic2"></div>
+                <div class="goods-text">保护视力</div>
+              </div>
+              <div class="goods-item">
+                <div class="goods-pic goods-pic3"></div>
+                <div class="goods-text">保护心脏</div>
+              </div>
+              <div class="goods-item">
+                <div class="goods-pic goods-pic4"></div>
+                <div class="goods-text">补铁补血</div>
+              </div>
+              <div class="goods-item">
+                <div class="goods-pic goods-pic5"></div>
+                <div class="goods-text">补充维生素</div>
+              </div>
+              <div class="goods-item">
+                <div class="goods-pic goods-pic6"></div>
+                <div class="goods-text">补钙</div>
+              </div>
+              <div class="goods-item">
+                <div class="goods-pic goods-pic7"></div>
+                <div class="goods-text">
+                  <p>辅助降尿酸</p>
+                  <p>改善风湿</p>
+                </div>
+              </div>
+              <div class="goods-item">
+                <div class="goods-pic goods-pic8"></div>
+                <div class="goods-text">
+                  <p>保护卵巢</p>
+                  <p>调节内分泌</p>
+                </div>
+              </div>
+              <div class="goods-item">
+                <div class="goods-pic goods-pic9"></div>
+                <div class="goods-text">
+                  <p>抗氧化</p>
+                  <p>防衰老</p>
+                </div>
+              </div>
+              <div class="goods-item">
+                <div class="goods-pic goods-pic10"></div>
+                <div class="goods-text">美容养颜</div>
+              </div>
+              <div class="goods-item">
+                <div class="goods-pic goods-pic11"></div>
+                <div class="goods-text">排毒养颜</div>
+              </div>
+              <div class="goods-item">
+                <div class="goods-pic goods-pic12"></div>
+                <div class="goods-text">呵护更年期</div>
+              </div>
+              <div class="goods-item">
+                <div class="goods-pic goods-pic13"></div>
+                <div class="goods-text">辅助睡眠</div>
+              </div>
+              <div class="goods-item">
+                <div class="goods-pic goods-pic14"></div>
+                <div class="goods-text">改善肠胃</div>
+              </div>
+              <div class="goods-item">
+                <div class="goods-pic goods-pic15"></div>
+                <div class="goods-text">降三高</div>
+              </div>
+              <div class="goods-item">
+                <div class="goods-pic goods-pic16"></div>
+                <div class="goods-text">舒缓焦虑</div>
+              </div>
+              <div class="goods-item">
+                <div class="goods-pic goods-pic17"></div>
+                <div class="goods-text">强健骨骼</div>
+              </div>
+              <div class="goods-item">
+                <div class="goods-pic goods-pic18"></div>
+                <div class="goods-text">清新口气</div>
+              </div>
+              <div class="goods-item">
+                <div class="goods-pic goods-pic19"></div>
+                <div class="goods-text">前列腺保养</div>
+              </div>
+              <div class="goods-item">
+                <div class="goods-pic goods-pic20"></div>
+                <div class="goods-text">舒缓痛经暖宫</div>
+              </div>
+              <div class="goods-item">
+                <div class="goods-pic goods-pic21"></div>
+                <div class="goods-text">孕期健康</div>
+              </div>
+            </div>
+          </div>
+          <div class="classification-item">
+            <div class="goods-list clear">
+              <div class="goods-item">
+                <div class="goods-pic goods-pic22"></div>
+                <div class="goods-text">厨房清洁</div>
+              </div>
+              <div class="goods-item">
+                <div class="goods-pic goods-pic23"></div>
+                <div class="goods-text">居家好药</div>
+              </div>
+              <div class="goods-item">
+                <div class="goods-pic goods-pic24"></div>
+                <div class="goods-text">沐浴护肤</div>
+              </div>
+            </div>
+          </div>
+          <div class="classification-item">
+            <div class="goods-list clear">
+              <div class="goods-item">
+                <div class="goods-pic goods-pic25"></div>
+                <div class="goods-text">补水保湿</div>
+              </div>
+              <div class="goods-item">
+                <div class="goods-pic goods-pic26"></div>
+                <div class="goods-text">美白淡斑</div>
+              </div>
+              <div class="goods-item">
+                <div class="goods-pic goods-pic27"></div>
+                <div class="goods-text">卸妆水</div>
+              </div>
+              <div class="goods-item">
+                <div class="goods-pic goods-pic29"></div>
+                <div class="goods-text">防晒</div>
+              </div>
+              <div class="goods-item">
+                <div class="goods-pic goods-pic30"></div>
+                <div class="goods-text">晒后修复&ngsp;止痒</div>
+              </div>
+              <div class="goods-item">
+                <div class="goods-pic goods-pic31"></div>
+                <div class="goods-text">减肥瘦身</div>
+              </div>
+            </div>
+          </div>
+          <div class="classification-item">
+            <div class="goods-list clear">
+              <div class="goods-item">
+                <div class="goods-pic goods-pic32"></div>
+                <div class="goods-text">宝宝健康</div>
+              </div>
+              <div class="goods-item">
+                <div class="goods-pic goods-pic33"></div>
+                <div class="goods-text">婴儿奶粉</div>
+              </div>
+              <div class="goods-item">
+                <div class="goods-pic goods-pic34"></div>
+                <div class="goods-text">儿童水杯</div>
+              </div>
+              <div class="goods-item">
+                <div class="goods-pic goods-pic35"></div>
+                <div class="goods-text">成人奶粉</div>
+              </div>
+              <div class="goods-item">
+                <div class="goods-pic goods-pic36"></div>
+                <div class="goods-text">身体护理</div>
+              </div>
+            </div>
+          </div>
+          <div class="classification-platform">
+            <div class="classification-platform-top">热门品牌</div>
+            <div class="classification-platform-list">
+              <div class="platform-item">
+                <div class="platform-item-advertisement">
+                  <div class="advertisement-pic"></div>
+                  <div class="advertisement-name">雪肌精1</div>
+                </div>
+              </div>
+              <div class="platform-item">
+                <div class="platform-item-advertisement">
+                  <div class="advertisement-pic"></div>
+                  <div class="advertisement-name">雪肌精</div>
+                </div>
+              </div>
+              <div class="platform-item">
+                <div class="platform-item-advertisement">
+                  <div class="advertisement-pic"></div>
+                  <div class="advertisement-name">雪肌精</div>
+                </div>
+              </div>
+              <div class="platform-item">
+                <div class="platform-item-advertisement">
+                  <div class="advertisement-pic"></div>
+                  <div class="advertisement-name">雪肌精</div>
+                </div>
+              </div>
+              <div class="platform-item">
+                <div class="platform-item-advertisement">
+                  <div class="advertisement-pic"></div>
+                  <div class="advertisement-name">雪肌精</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="classification-platform">
+            <div class="classification-platform-top">热门品牌</div>
+            <div class="classification-platform-list">
+              <div class="platform-item">
+                <div class="platform-item-advertisement">
+                  <div class="advertisement-pic"></div>
+                  <div class="advertisement-name">雪肌精2</div>
+                </div>
+              </div>
+              <div class="platform-item">
+                <div class="platform-item-advertisement">
+                  <div class="advertisement-pic"></div>
+                  <div class="advertisement-name">雪肌精</div>
+                </div>
+              </div>
+              <div class="platform-item">
+                <div class="platform-item-advertisement">
+                  <div class="advertisement-pic"></div>
+                  <div class="advertisement-name">雪肌精</div>
+                </div>
+              </div>
+              <div class="platform-item">
+                <div class="platform-item-advertisement">
+                  <div class="advertisement-pic"></div>
+                  <div class="advertisement-name">雪肌精</div>
+                </div>
+              </div>
+              <div class="platform-item">
+                <div class="platform-item-advertisement">
+                  <div class="advertisement-pic"></div>
+                  <div class="advertisement-name">雪肌精</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="classification-platform">
+            <div class="classification-platform-top">热门品牌</div>
+            <div class="classification-platform-list">
+              <div class="platform-item">
+                <div class="platform-item-advertisement">
+                  <div class="advertisement-pic"></div>
+                  <div class="advertisement-name">雪肌精3</div>
+                </div>
+              </div>
+              <div class="platform-item">
+                <div class="platform-item-advertisement">
+                  <div class="advertisement-pic"></div>
+                  <div class="advertisement-name">雪肌精</div>
+                </div>
+              </div>
+              <div class="platform-item">
+                <div class="platform-item-advertisement">
+                  <div class="advertisement-pic"></div>
+                  <div class="advertisement-name">雪肌精</div>
+                </div>
+              </div>
+              <div class="platform-item">
+                <div class="platform-item-advertisement">
+                  <div class="advertisement-pic"></div>
+                  <div class="advertisement-name">雪肌精</div>
+                </div>
+              </div>
+              <div class="platform-item">
+                <div class="platform-item-advertisement">
+                  <div class="advertisement-pic"></div>
+                  <div class="advertisement-name">雪肌精</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="classification-platform">
+            <div class="classification-platform-top">热门品牌</div>
+            <div class="classification-platform-list">
+              <div class="platform-item">
+                <div class="platform-item-advertisement">
+                  <div class="advertisement-pic"></div>
+                  <div class="advertisement-name">雪肌精4</div>
+                </div>
+              </div>
+              <div class="platform-item">
+                <div class="platform-item-advertisement">
+                  <div class="advertisement-pic"></div>
+                  <div class="advertisement-name">雪肌精</div>
+                </div>
+              </div>
+              <div class="platform-item">
+                <div class="platform-item-advertisement">
+                  <div class="advertisement-pic"></div>
+                  <div class="advertisement-name">雪肌精</div>
+                </div>
+              </div>
+              <div class="platform-item">
+                <div class="platform-item-advertisement">
+                  <div class="advertisement-pic"></div>
+                  <div class="advertisement-name">雪肌精</div>
+                </div>
+              </div>
+              <div class="platform-item">
+                <div class="platform-item-advertisement">
+                  <div class="advertisement-pic"></div>
+                  <div class="advertisement-name">雪肌精</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab">
+        <div class="tab-item">
+          <div class="tab-item-pic tab-item-pic1"></div>
+          <div class="tab-item-text">首页</div>
+        </div>
+        <div class="tab-item router-link-exact-active">
+          <div class="tab-item-pic tab-item-pic2"></div>
+          <div class="tab-item-text">分类</div>
+        </div>
+        <div class="tab-item">
+          <div class="tab-item-pic tab-item-pic3"></div>
+          <div class="tab-item-text">发现</div>
+        </div>
+        <div class="tab-item">
+          <div class="tab-item-pic tab-item-pic4"></div>
+          <div class="tab-item-text">赚钱</div>
+        </div>
+        <div class="tab-item">
+          <div class="tab-item-pic tab-item-pic5"></div>
+          <div class="tab-item-text">购物车</div>
+        </div>
+      </div>
+    </div>
+    <!-- built files will be auto injected -->
+    <script typt="text/javascript">
+      $(function(){
+        $('.goods-search-input').on('focus',function(){
+          $('.goods-search-bg').show();
+          $(this).addClass('goods-search-input-focus');
+          $('.myorder-btn').hide();
+          $('.search-btn').show();
+          $('.return-pic').show();
+          $('.goods-search-bg').show();
+          $('.goods-list').hide()
+        })
+
+        $('.return-pic').on('click',function(){
+          $('.goods-search-bg').hide();
+          $('.goods-search-input').removeClass('goods-search-input-focus');
+          $('.myorder-btn').show();
+          $('.search-btn').hide();
+          $('.return-pic').hide();
+          $('.goods-search-bg').hide();
+          $('.goods-list').show()
+        })
+
+        $('.classification-item').eq(0).show()
+        $('.classification-platform').eq(0).show()
+        $('.goods-item-content').on('click',function(){
+          $('.goods-item-content').removeClass('goods-item-content-active')
+          $(this).addClass('goods-item-content-active')
+          $('.classification-item,.classification-platform').hide()
+          $('.classification-item').eq($(this).parent().index()).show()
+          $('.classification-platform').eq($(this).parent().index()).show()
+        })
+
+        $('.clear-btn').on('click',function(){
+          $('.goods-search-input').val('')
+          $('.clear-btn').hide()
+        })
+      })
+    </script>
+  </body>
+</html>

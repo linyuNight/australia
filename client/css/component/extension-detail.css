@@ -1,0 +1,232 @@
+#app {
+  width: 100%;
+  height: 100%;
+}
+.bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #f2f2f2;
+  z-index: -1;
+}
+.classification {
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background: #f2f2f2;
+}
+.classification .classification-item-bg {
+  background: #f2f2f2;
+}
+.classification .classification-item-bg .classification-item {
+  display: none;
+  margin-bottom: 8px;
+}
+.classification .classification-item-bg .classification-item .goods-list {
+  width: 100%;
+}
+.classification .classification-item-bg .classification-item .goods-list .goods-item {
+  width: 100%;
+  padding: 15px;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.classification .classification-item-bg .classification-item .goods-list .goods-item .goods-pic-contain {
+  position: relative;
+  width: 120px;
+  height: 130px;
+}
+.classification .classification-item-bg .classification-item .goods-list .goods-item .goods-pic-contain .goods-pic {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 110px;
+  height: 110px;
+  background: #ccc;
+}
+.classification .classification-item-bg .classification-item .goods-list .goods-item .goods-text-contain {
+  width: calc(100% - 135px);
+  height: 130px;
+  padding: 5px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.classification .classification-item-bg .classification-item .goods-list .goods-item .goods-text-contain .goods-text-contain-top {
+  width: 100%;
+}
+.classification .classification-item-bg .classification-item .goods-list .goods-item .goods-text-contain .goods-text-contain-top .goods-text-contain-top-top {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 5px;
+}
+.classification .classification-item-bg .classification-item .goods-list .goods-item .goods-text-contain .goods-text-contain-top .goods-text-contain-top-top .font-weight {
+  font-weight: bold;
+}
+.classification .classification-item-bg .classification-item .goods-list .goods-item .goods-text-contain .goods-text-contain-top .goods-text-contain-top-bottom {
+  font-size: 13px;
+  color: #e51c23;
+}
+.classification .classification-item-bg .classification-item .goods-list .goods-item .goods-text-contain .goods-text-contain-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.classification .classification-item-bg .classification-item .goods-list .goods-item .goods-text-contain .goods-text-contain-bottom .goods-text-contain-bottom-left {
+  font-size: 12px;
+  color: #666;
+  margin-top: 14px;
+}
+.classification .classification-item-bg .classification-item .goods-list .goods-item .goods-text-contain .goods-text-contain-bottom .goods-text-contain-bottom-right {
+  width: 110px;
+  height: 35px;
+  background: #e51c23;
+  border-radius: 17px;
+  text-align: center;
+  line-height: 35px;
+  color: #fff;
+  font-size: 14px;
+}
+.classification .goods-list-title-contain {
+  margin: 0 auto;
+  width: 177px;
+  height: 40px;
+}
+.classification .goods-list-title-contain .goods-list-title-left {
+  position: relative;
+  float: left;
+  width: 51px;
+  height: 20px;
+}
+.classification .goods-list-title-contain .goods-list-title-left:after {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #d7d7d7;
+  content: ' ';
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {
+  .classification .goods-list-title-contain .goods-list-title-left:after {
+    transform: scaleY(0.5);
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+  .classification .goods-list-title-contain .goods-list-title-left:after {
+    transform: scaleY(0.4);
+  }
+}
+.classification .goods-list-title-contain .goods-list-title-center {
+  float: left;
+  width: 75px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 14px;
+  color: #666;
+}
+.classification .goods-list-title-contain .goods-list-title-right {
+  position: relative;
+  float: left;
+  width: 51px;
+  height: 20px;
+}
+.classification .goods-list-title-contain .goods-list-title-right:after {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #d7d7d7;
+  content: ' ';
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {
+  .classification .goods-list-title-contain .goods-list-title-right:after {
+    transform: scaleY(0.5);
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+  .classification .goods-list-title-contain .goods-list-title-right:after {
+    transform: scaleY(0.4);
+  }
+}
+.classification .goods-list-contain {
+  width: 100%;
+}
+.classification .goods-list-contain .goods-item {
+  width: calc(50% - 15px);
+  height: 268px;
+  background: #fff;
+  margin-bottom: 10px;
+}
+.classification .goods-list-contain .goods-item:nth-child(odd) {
+  float: left;
+  margin-left: 10px;
+}
+.classification .goods-list-contain .goods-item:nth-child(even) {
+  float: right;
+  margin-right: 10px;
+}
+.classification .goods-list-contain .goods-item .goods-item-pic {
+  width: 100%;
+  height: 180px;
+  background-image: url("../../image/extension/img.png");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.classification .goods-list-contain .goods-item .goods-item-text-contain {
+  wdith: 100%;
+  height: 87px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.classification .goods-list-contain .goods-item .goods-item-text-contain .goods-item-text1 {
+  position: relative;
+  top: -2px;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  font-size: 13px;
+  color: #000;
+  line-height: 18px;
+}
+.classification .goods-list-contain .goods-item .goods-item-text-contain .goods-item-text2 {
+  width: 100%;
+}
+.classification .goods-list-contain .goods-item .goods-item-text-contain .goods-item-text2 .goods-item-text-new {
+  width: 20%;
+  color: #e51c23;
+  font-size: 14px;
+}
+.classification .goods-list-contain .goods-item .goods-item-text-contain .goods-item-text2 .goods-item-text-old {
+  width: 20%;
+  color: #999;
+  font-size: 12px;
+  transform: scale(0.8);
+}
+.classification .goods-list-contain .goods-item .goods-item-text-contain .goods-item-text2 .goods-item-text-text {
+  color: #999;
+  font-size: 12px;
+  transform: scale(0.8);
+}

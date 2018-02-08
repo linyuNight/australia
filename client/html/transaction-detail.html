@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>澳洲线下商城</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/Swiper/3.4.2/css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/common/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/component/transaction-detail.css">
+    <script type="text/javascript" src="https://cdn.bootcss.com/jquery/2.2.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.bootcss.com/Swiper/3.4.2/js/swiper.min.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <div class="transaction-detail">
+        <div class="bg"></div>
+        <div class="transaction-detail-contain">
+          <img class="transaction-detail-pic" src="../image/transaction-detail/success.png">
+          <div class="transaction-detail-text">支付成功</div>
+          <img class="transaction-detail-pic" src="../image/transaction-detail/fail.png">
+          <div class="transaction-detail-text">支付失败</div>
+          <div class="btn-contain">
+            <div class="btn-left">查看订单详情</div>
+            <div class="btn-right">返回商场首页</div>
+          </div>
+        </div>
+      </div>
+      <div class="erweima-popup-contain">
+        <div class="erweima-popup-box">
+          <div class="erweima-popup-content">
+            <div class="close-btn"></div>
+            <div class="erweima-popup-content-top">您还未关注商城公众号哦！</div>
+            <img class="erweima-popup-content-erweima" src="../image/make-money/qrcode.png">
+            <div class="erweima-popup-content-bottom">长按并识别图中二维码</div>
+            <div class="erweima-popup-content-note">关注公众号随时查看订单采购情况</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- built files will be auto injected -->
+    <script typt="text/javascript">
+      $(function(){
+        $('.erweima-popup-contain').show();
+        $('.close-btn').on('click',function(){
+          $('.erweima-popup-contain').fadeOut();
+        })
+      })
+    </script>
+  </body>
+</html>

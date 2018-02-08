@@ -1,0 +1,99 @@
+$yellow:#fdd953;
+$red:#e84e40;
+
+.detail-contain{
+	width:100%;
+	height:100%;
+	overflow:scroll;
+	-webkit-overflow-scrolling : touch;
+	.detail-top{
+		width:100%;
+		height:130px;
+		padding-top:22px;
+		background:#fff;
+		.detail-shiji{
+			margin-top: 10px;
+			margin-bottom:10px;
+			text-align: center;
+			color:#000;
+			.detail-shiji-left{
+				font-size: 14px;
+				margin-right:4px;
+			}
+			.detail-shiji-small{
+				font-size: 14px;
+			}
+			.detail-shiji-price{
+				font-size: 24px;
+			}
+		}
+		.detail-youhui{
+			text-align: center;
+			.detail-youhui-left{
+				font-size: 14px;
+				color:#000;
+				margin-right:4px;
+			}
+			.detail-youhui-price{
+				font-size: 14px;
+				color:$red;
+			}
+		}
+	}
+	.detail-title{
+		width:100%;
+		height:48px;
+		line-height: 48px;
+		text-align: center;
+	}
+	.detail-list{
+		width:100%;
+		.detail-item{
+			margin:0 auto 15px;
+			width:92%;
+			height:65px;
+			line-height: 65px;
+			background:#fff;
+			border-radius:2px;
+			padding-left:8px;
+			padding-right:18px;
+			.detail-item-pic{
+				float:left;
+				width:50px;
+				height:50px;
+				background-color:#ccc;
+				margin-right:8px;
+				margin-top: 7px;
+			}
+			.detail-item-text{
+				float:left;
+				font-size: 13px;
+			}
+			.detail-item-right{
+				float:right;
+				.detail-item-num{
+					float:left;
+					font-size: 13px;
+					margin-right:16px;
+				}
+				.detail-item-price{
+					float:left;
+					.detail-item-price-left{
+						font-size: 12px;
+						transform: scale(.8);
+						transform-origin: 0 100%;
+					}
+					.detail-item-price-right{
+						font-size: 14px;
+					}
+				}
+			}
+		}
+		.detail-more{
+			width:100%;
+			text-align: center;
+			color:#444;
+			margin-bottom:48px;
+		}
+	}
+}
